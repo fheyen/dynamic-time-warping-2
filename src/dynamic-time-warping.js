@@ -33,8 +33,9 @@ export default class DynamicTimeWarping {
                 this.matrix[i][j] = cost + this.distFunc(this.ser1[i], this.ser2[j]);
             }
         }
-        return this.matrix[this.ser1.length - 1][this.ser2.length - 1];
-    };
+        this.distance = this.matrix[this.ser1.length - 1][this.ser2.length - 1];
+        return this.distance;
+    }
 
     getPath() {
         if (this.path !== null) {
@@ -78,5 +79,5 @@ export default class DynamicTimeWarping {
         }
         this.path = this.path.reverse();
         return this.path;
-    };
+    }
 }
