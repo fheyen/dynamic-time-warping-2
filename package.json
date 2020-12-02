@@ -1,6 +1,6 @@
 {
   "name": "dynamic-time-warping-2",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Dynamic time warping for Javascript",
   "main": "src/dynamic-time-warping.js",
   "scripts": {
