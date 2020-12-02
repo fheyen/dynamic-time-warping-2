@@ -1,36 +1,43 @@
 {
-  "name": "dynamic-time-warping",
+  "name": "dynamic-time-warping-2",
   "version": "1.0.0",
   "description": "Dynamic time warping for Javascript",
   "main": "src/dynamic-time-warping.js",
   "scripts": {
-    "test": "grunt test"
+    "build": "webpack",
+    "test": "jest",
+    "testcov": "jest --coverage",
+    "predeploy": "jest && webpack",
+    "deploy": "npm publish"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/GordonLesti/dynamic-time-warping.git"
+    "url": "https://github.com/fheyen/dynamic-time-warping-2.git"
   },
   "keywords": [
     "dynamic",
     "time",
     "warping"
   ],
-  "author": "Gordon Lesti <info@gordonlesti.com>",
+  "author": "Frank Heyen",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/GordonLesti/dynamic-time-warping/issues"
+    "url": "https://github.com/fheyen/dynamic-time-warping-2/issues"
   },
   "devDependencies": {
-    "grunt": "^0.4.5",
-    "grunt-cli": "^1.2.0",
-    "grunt-contrib-connect": "^1.0.2",
-    "grunt-contrib-jshint": "^1.0.0",
-    "grunt-contrib-qunit": "^1.2.0",
-    "grunt-contrib-uglify": "^2.0.0",
-    "grunt-contrib-watch": "^1.0.0",
-    "grunt-coveralls": "^1.0.1",
-    "grunt-jscs": "^3.0.1",
-    "grunt-jsonlint": "^1.1.0",
-    "grunt-qunit-istanbul": "^0.6.0"
+    "@babel/core": "^7.12.9",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/plugin-proposal-optional-chaining": "^7.12.7",
+    "@babel/preset-env": "^7.12.7",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.2.2",
+    "eslint": "^7.14.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "jest": "^26.6.3",
+    "webpack": "^5.9.0",
+    "webpack-cli": "^4.2.0"
   }
 }

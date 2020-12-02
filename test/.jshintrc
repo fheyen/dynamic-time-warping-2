@@ -1,7 +1,0 @@
-{
-    "qunit": true,
-    "globals": {
-        "DynamicTimeWarping": false
-    },
-    "extends": "../.jshintrc"
-}
