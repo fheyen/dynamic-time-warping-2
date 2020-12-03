@@ -41,14 +41,10 @@ Will return the path of the dynamic time warping as array of arrays with two int
 const dist = dtw.getPath();
 ```
 
-## Contributing
-
-Please see [CONTRIBUTING](CONTRIBUTING.md) and [CONDUCT](CONDUCT.md) for details.
-
 ## Credits
 
 - [Frank Heyen](https://github.com/fheyen/)
-- [Gordon Lesti](https://github.com/GordonLesti/)]
+- [Gordon Lesti](https://github.com/GordonLesti/)
 - All contributors
 
 ## License
